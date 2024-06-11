@@ -1,8 +1,5 @@
 <template>
-  <nav
-    class="navbar navbar-expand-lg navbar-dark"
-    style="background-color: rgba(10, 25, 47, 0.9)"
-  >
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <font-awesome-icon
@@ -25,44 +22,19 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <router-link
-              class="nav-link"
-              to="/"
-              @click="changeBackgroundColor('#a4c639', $event)"
-              >Home</router-link
-            >
+            <router-link class="nav-link" to="/">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link
-              class="nav-link"
-              to="/about"
-              @click="changeBackgroundColor('#ff6347', $event)"
-              >About</router-link
-            >
+            <router-link class="nav-link" to="/about">About</router-link>
           </li>
           <li class="nav-item">
-            <router-link
-              class="nav-link"
-              to="/projects"
-              @click="changeBackgroundColor('#4682b4', $event)"
-              >Projects</router-link
-            >
+            <router-link class="nav-link" to="/projects">Projects</router-link>
           </li>
           <li class="nav-item">
-            <router-link
-              class="nav-link"
-              to="/blog"
-              @click="changeBackgroundColor('#deb887', $event)"
-              >Blog</router-link
-            >
+            <router-link class="nav-link" to="/blog">Blog</router-link>
           </li>
           <li class="nav-item">
-            <router-link
-              class="nav-link"
-              to="/contact"
-              @click="changeBackgroundColor('#5f9ea0', $event)"
-              >Contact</router-link
-            >
+            <router-link class="nav-link" to="/contact">Contact</router-link>
           </li>
         </ul>
         <button
@@ -96,11 +68,6 @@ export default defineComponent({
   methods: {
     onLogin() {
       console.log("Login clicked");
-    },
-    changeBackgroundColor(color: string, event: MouseEvent) {
-      event.preventDefault(); // Prevents the link from navigating immediately
-      document.documentElement.style.setProperty("--background-color", color);
-      this.$router.push((event.target as HTMLAnchorElement).pathname); // Manually navigate after color change
     },
   },
 });

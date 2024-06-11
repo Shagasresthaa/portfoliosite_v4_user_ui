@@ -1,4 +1,22 @@
 .home {
-  background-color: aqua !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: "Pacifico", cursive;
+  --bs-gutter-x: 0 !important;
+  margin-top: 6rem;
+  color: white;
+}
+
+.introsec {
+  text-align: left;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.hintro,
+.bintro {
+  margin: 0;
 }
