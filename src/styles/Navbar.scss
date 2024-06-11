@@ -1,0 +1,55 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(10, 25, 47, 0.9);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Pacifico", cursive !important;
+  border-radius: 20px;
+  margin: 1rem;
+}
+
+.nav-item {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: x-large;
+  color: #ccd6f6;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    color: #89abe3; // Lighter blue on hover
+    background-color: #293c5a; // Dark blue background on hover for contrast
+    transform: translateY(-5px); // Subtle lift effect on hover
+  }
+}
+
+.login-btn {
+  background: none;
+  border: none;
+  color: #ccd6f6;
+  font-size: xx-large; // Larger icon for better visibility
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #89abe3; // Lighter blue on hover
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: none; // Ensure this targets the correct class for hiding nav-links
+  }
+  .login-btn {
+    flex-grow: 1;
+    text-align: center;
+  }
+}
