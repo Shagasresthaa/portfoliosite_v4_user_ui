@@ -1,22 +1,105 @@
 .home {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  width: 100%;
+  color: white; // Ensure all text within home is white
+}
+
+.content-area {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Pacifico", cursive;
-  --bs-gutter-x: 0 !important;
-  margin-top: 6rem;
-  color: white;
+  width: 100%;
+  margin-top: 3rem; // Default top margin
 }
 
 .introsec {
-  text-align: left;
-  padding: 20px;
-  max-width: 600px;
+  text-align: center;
   width: 100%;
+  padding: 20px 0;
+}
+
+.profile-pic {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .hintro,
 .bintro {
+  font-family: "Pacifico", cursive;
   margin: 0;
+  padding: 0.5rem;
+}
+
+.cont {
+  margin: 1rem;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.mcont {
+  margin: 10px 0; // Uniform margin for vertical spacing
+}
+
+.lnks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.fa-linkedin,
+.fa-github,
+.fa-file-pdf,
+.fa-award {
+  color: white;
+  margin: 1rem;
+}
+
+.fa-linkedin:hover {
+  color: rgb(14, 111, 221);
+}
+
+.fa-github:hover {
+  color: rgb(0, 0, 0);
+}
+
+.fa-file-pdf:hover {
+  color: rgb(221, 29, 29);
+}
+
+.fa-award:hover {
+  color: rgb(243, 140, 4);
+}
+
+@media (max-width: 768px) {
+  .content-area {
+    margin-top: 2rem;
+  }
+
+  .profile-pic {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-area {
+    margin-top: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 10rem;
+    height: 10rem;
+  }
 }

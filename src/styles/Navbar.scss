@@ -48,8 +48,8 @@
 }
 
 .navbar-dark .navbar-nav .nav-link.router-link-active,
-.navbar-dark .navbar-nav .nav-item.active .nav-link {
-  color: #74c0fc;
+.navbar-dark .navbar-nav .nav-item.active .nav-link .nav-link.active {
+  color: #89abe3 !important;
 }
 
 @media (max-width: 768px) {

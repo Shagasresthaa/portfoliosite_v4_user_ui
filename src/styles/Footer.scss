@@ -1,0 +1,67 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  background-color: rgba(10, 25, 47, 0.65) !important;
+  width: 100%;
+  padding: 0 !important;
+}
+
+.foot-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fhead {
+  margin: 0 !important;
+  padding: 1rem;
+  align-self: center;
+}
+
+.text-center {
+  align-self: center;
+  font-size: large;
+}
+
+.flogo {
+  flex: 1;
+  text-align: right;
+  img {
+    height: 10rem;
+    width: auto;
+  }
+}
+
+/* Media queries for different device sizes */
+@media (max-width: 1024px) {
+  .flogo img {
+    height: medium; // Slightly reduced size for mid-sized devices
+  }
+  .text-center {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  .fhead,
+  .flogo {
+    text-align: center;
+    flex: unset;
+  }
+  .flogo img {
+    height: smalls; // Further reduction for smaller screens
+  }
+  .text-center {
+    font-size: smaller;
+  }
+}

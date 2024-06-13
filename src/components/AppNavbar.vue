@@ -5,7 +5,7 @@
         <font-awesome-icon
           :icon="['fas', 'user-astronaut']"
           size="2xl"
-          style="color: #74c0fc; font-size: xx-large"
+          style="color: #ffffff; font-size: xx-large"
         />
       </a>
       <button
