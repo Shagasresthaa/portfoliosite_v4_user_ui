@@ -1,0 +1,63 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(10, 25, 47, 0.65);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Pacifico", cursive !important;
+  border-radius: 20px;
+  margin: 1rem 1rem 0 1rem;
+}
+
+.nav-item {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: x-large;
+  color: #ccd6f6;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    color: #89abe3;
+    transform: translateY(-5px);
+  }
+}
+
+.login-btn {
+  background: none;
+  border: none;
+  color: #ccd6f6;
+  font-size: xx-large;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #89abe3;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link.router-link-active,
+.navbar-dark .navbar-nav .nav-item.active .nav-link .nav-link.active {
+  color: #89abe3 !important;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: none;
+  }
+  .login-btn {
+    flex-grow: 1;
+    text-align: center;
+  }
+}
