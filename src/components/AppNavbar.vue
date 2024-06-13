@@ -37,11 +37,7 @@
             <router-link class="nav-link" to="/contact">Contact</router-link>
           </li>
         </ul>
-        <button
-          class="btn btn-outline-success login-btn"
-          type="button"
-          @click="onLogin"
-        >
+        <button class="btn login-btn" type="button" @click="onLogin">
           <font-awesome-icon icon="user-circle" />
         </button>
       </div>

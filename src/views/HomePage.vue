@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <AppNavbar class="navbar" />
     <div class="content-area">
       <img
         src="@/assets/propic.jpg"
@@ -47,13 +46,11 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import FooterComponent from "@/components/FooterComponent.vue";
-import AppNavbar from "@/components/AppNavbar.vue";
 
 export default defineComponent({
   name: "HomePage",
   components: {
     FooterComponent,
-    AppNavbar,
   },
 });
 </script>

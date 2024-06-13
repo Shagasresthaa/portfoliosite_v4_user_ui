@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--background-color) !important;
-  height: 100%;
+  min-height: 100vh;
 }
 
 #app {
@@ -15,5 +15,5 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: space-between;
-  overflow: hidden; // Prevents unexpected scrolling issues
+  overflow: hidden;
 }

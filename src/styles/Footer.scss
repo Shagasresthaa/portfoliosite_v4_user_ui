@@ -38,10 +38,9 @@
   }
 }
 
-/* Media queries for different device sizes */
 @media (max-width: 1024px) {
   .flogo img {
-    height: medium; // Slightly reduced size for mid-sized devices
+    height: medium;
   }
   .text-center {
     font-size: medium;
@@ -59,7 +58,7 @@
     flex: unset;
   }
   .flogo img {
-    height: smalls; // Further reduction for smaller screens
+    height: smalls;
   }
   .text-center {
     font-size: smaller;

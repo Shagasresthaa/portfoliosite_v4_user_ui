@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <BackgroundComponent />
-    <AppNavbar />
-    <router-view />
+    <AppNavbar class="nav" />
+    <router-view class="dyncont" />
   </div>
 </template>
 
