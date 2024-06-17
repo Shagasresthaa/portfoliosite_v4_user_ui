@@ -56,7 +56,15 @@
   .navbar-nav {
     display: none;
   }
+  .navbar-collapse.show .navbar-nav {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
   .login-btn {
+    display: flex;
+    margin: auto;
     flex-grow: 1;
     text-align: center;
   }
