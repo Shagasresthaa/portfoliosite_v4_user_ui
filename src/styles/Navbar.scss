@@ -34,19 +34,6 @@
   }
 }
 
-.login-btn {
-  background: none;
-  border: none;
-  color: #ccd6f6;
-  font-size: xx-large;
-  cursor: pointer;
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: #89abe3;
-  }
-}
-
 .navbar-dark .navbar-nav .nav-link.router-link-active,
 .navbar-dark .navbar-nav .nav-item.active .nav-link .nav-link.active {
   color: #89abe3 !important;
@@ -60,12 +47,6 @@
     display: flex !important;
     flex-direction: column;
     width: 100%;
-    text-align: center;
-  }
-  .login-btn {
-    display: flex;
-    margin: auto;
-    flex-grow: 1;
     text-align: center;
   }
 }

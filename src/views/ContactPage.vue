@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <h1>This is Contact Page</h1>
+    <WorkInProgressComponent />
   </div>
   <FooterComponent />
 </template>
@@ -8,11 +8,13 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import FooterComponent from "@/components/FooterComponent.vue";
+import WorkInProgressComponent from "@/components/WorkInProgress.vue";
 
 export default defineComponent({
   name: "ContactPage",
   components: {
     FooterComponent,
+    WorkInProgressComponent,
   },
 });
 </script>

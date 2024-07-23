@@ -1,7 +1,5 @@
 <template>
-  <div class="about">
-    <h1>This is About Page</h1>
-  </div>
+  <div class="about"></div>
   <FooterComponent />
 </template>
 
