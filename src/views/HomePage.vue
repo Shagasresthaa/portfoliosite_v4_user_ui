@@ -11,31 +11,48 @@
       <div class="cont display-6">
         <p>Graduate Student @ Western Michigan University</p>
         <p>
-          Member of The Planetary Society || TCS Alumni || Full Stack Developer
+          Astronomy & Electronics Enthusiast || TCS Alumni || Full Stack
+          Developer
         </p>
-        <p>Astronomy and Electronics Enthusiast</p>
+        <p>
+          Member of The Planetary Society || Member of the Society of Amateur
+          Radio Astronomers
+        </p>
       </div>
       <div class="lnks">
+        <a
+          id="cy-effective-orcid-url"
+          class="underline"
+          href="https://orcid.org/0009-0000-8522-4887"
+          target="orcid.widget"
+          rel="me noopener noreferrer"
+          style="vertical-align: top"
+        >
+          <i class="fab fa-orcid fa-2xl"></i>
+        </a>
         <a
           href="https://www.linkedin.com/in/sresthaa-shaga-a5329b154"
           target="_blank"
         >
-          <i class="fab fa-linkedin fa-2x"></i>
+          <i class="fab fa-linkedin fa-2xl"></i>
         </a>
         <a href="https://github.com/Shagasresthaa" target="_blank">
-          <i class="fab fa-github fa-2x"></i>
+          <i class="fab fa-github fa-2xl"></i>
         </a>
         <a
           href="https://drive.google.com/file/d/1-rgNLOmNlwts84TTxz5ewItxeTlhfHj2/view?usp=sharing"
           target="_blank"
         >
-          <i class="far fa-file-pdf fa-2x"></i>
+          <i class="far fa-file-pdf fa-2xl"></i>
         </a>
         <a
           href="https://drive.google.com/drive/folders/1bs98W8ON9Rfk_zj_zmxD6dYAP14xQQht?usp=sharing"
           target="_blank"
         >
-          <i class="fas fa-award fa-2x"></i>
+          <i class="fas fa-award fa-2xl"></i>
+        </a>
+        <a href="https://steamcommunity.com/id/maverick_017/" target="_blank">
+          <i class="fab fa-steam fa-2xl"></i>
         </a>
       </div>
     </div>
