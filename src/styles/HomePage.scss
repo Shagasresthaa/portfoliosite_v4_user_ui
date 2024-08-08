@@ -5,6 +5,7 @@
   align-items: center;
   width: 100%;
   color: white;
+  margin-top: 1%;
 }
 
 .content-area {
@@ -14,7 +15,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 3rem;
 }
 
 .introsec {
@@ -92,9 +92,9 @@
   color: rgb(13, 96, 221);
 }
 /* Medium screens */
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .home {
-    margin-top: 10vh;
+    margin-top: 15%;
   }
 
   .profile-pic {
@@ -106,7 +106,7 @@
 /* Small screens */
 @media (max-width: 480px) {
   .home {
-    margin-top: 3vh;
+    margin-top: 20%;
   }
 
   .profile-pic {
