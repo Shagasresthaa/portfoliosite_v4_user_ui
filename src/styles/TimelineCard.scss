@@ -1,0 +1,68 @@
+.timeline-card {
+  font-family: "Kalam", cursive;
+  width: 45%;
+  padding: 1rem;
+  margin: 2rem 0;
+  position: relative;
+  border: 1px solid #ccc;
+  background-color: rgba(10, 25, 47, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #266fe6;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  &.align-left {
+    align-self: flex-start;
+    &::before {
+      transform: translateY(4.6rem);
+      right: -4.6rem;
+    }
+  }
+
+  &.align-right {
+    align-self: flex-end;
+    &::before {
+      transform: translateY(4.6rem);
+      left: -4.6rem;
+    }
+  }
+}
+
+.timeline-content {
+  text-align: left;
+  h3.title {
+    color: #89abe3;
+    margin-bottom: 0.5rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+  }
+  p {
+    margin: 0.25rem 0;
+  }
+}
+/* Medium screens */
+@media (max-width: 1000px) {
+  .timeline-card {
+    font-size: small;
+  }
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .timeline-card {
+    font-size: small;
+  }
+}

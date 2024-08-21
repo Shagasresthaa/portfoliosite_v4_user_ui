@@ -1,26 +1,32 @@
 .about {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   font-family: "Pacifico", cursive;
   color: white;
   margin-top: 5%;
 }
+
 .content-area {
   margin: 1rem;
-  flex-grow: 1;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+.timeline-holder {
+  flex: 1;
+  margin: 1rem;
+}
+
 .propic {
   margin: 2rem;
   width: 25vh;
   height: 25vh;
   border-radius: 2.5rem;
   object-fit: cover;
-  margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -28,38 +34,49 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  max-width: 50%;
 }
 
 .quest {
+  margin-left: 1rem;
+  margin-right: 1rem;
   font-family: "Kalam", cursive;
   font-size: xx-large;
   text-align: justify;
+  margin-bottom: 0;
 }
 
 .cont {
+  margin-left: 1rem;
+  margin-right: 1rem;
   font-family: "Kalam", cursive;
   font-size: xx-large;
   text-align: justify;
-  max-width: 50%;
 }
 
 /* Medium screens */
 @media (max-width: 1000px) {
   .about {
-    margin-top: 15%;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .timeline-holder {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
   .propic {
     width: 25%;
     height: 25%;
   }
-  .content-area {
-    align-items: center;
-  }
+
   .quest {
+    margin-left: 0;
+    margin-right: 0;
     font-size: small;
     max-width: none;
   }
+
   .quest-area {
     margin: 1rem;
     display: flex;
@@ -67,6 +84,7 @@
     align-items: center;
     max-width: 100%;
   }
+
   .cont {
     font-family: "Kalam", cursive;
     display: flex;
@@ -83,24 +101,29 @@
   .about {
     margin-top: 20%;
   }
+
   .propic {
-    width: 35%;
-    height: 35%;
+    width: 45%;
+    height: 45%;
+    border-radius: 1.5rem;
   }
-  .content-area {
-    align-items: center;
-  }
+
   .quest {
+    margin-left: 0;
+    margin-right: 0;
     font-size: small;
     max-width: none;
+    margin-bottom: 0;
   }
+
   .quest-area {
-    margin: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
+    margin-bottom: 0;
   }
+
   .cont {
     font-family: "Kalam", cursive;
     display: flex;
