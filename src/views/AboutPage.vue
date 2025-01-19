@@ -24,11 +24,11 @@
         a desire to build and solve—it's fueled by relentless curiosity and a
         passion for learning, not just individually, but alongside others who
         share similar interests. Whether I'm tackling a coding challenge or
-        delving into radio astronomy, it's the shared journey of exploration and
-        growth that truly excites me.<br />
+        delving into radio astronomy, or just staring into the dark from the
+        eyes of TESS looking for signs of life filled exoplanets, it's the
+        shared journey of exploration and growth that truly excites me.<br />
 
         &nbsp;&nbsp;&nbsp;&nbsp;I'm drawn to environments where passion and
-        curiosity lead the way, and where the process of learning and growing
         together is what matters most. If you're intrigued by the blend of
         technology and astronomy, or if you share a passion for exploring the
         unknown, let's connect. There's a universe of ideas to explore, and I'm

@@ -80,7 +80,7 @@ export default defineComponent({
           title: "Started Graduate Studies",
           position: "Student (MS Computer Science)",
           institution: "Western Michigan University",
-          date: "Jan, 2024",
+          date: "Jan, 2024 - Apr, 2026",
         },
       ],
     };
