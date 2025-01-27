@@ -1,6 +1,6 @@
 <template>
   <div class="timeline">
-    <div class="timeline-line"></div>
+    <div ref="timelineLine" class="timeline-line"></div>
     <TimelineCard
       v-for="(event, index) in events"
       :key="index"
@@ -10,19 +10,18 @@
       :date="event.date"
       :duration="event.duration"
       :alignment="index % 2 === 0 ? 'left' : 'right'"
+      :lineOffset="lineOffset"
     />
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, ref, onMounted } from "vue";
 import TimelineCard from "./TimelineCard.vue";
 
 export default defineComponent({
   name: "TimelineComponent",
-  components: {
-    TimelineCard,
-  },
+  components: { TimelineCard },
   data() {
     return {
       events: [
@@ -51,7 +50,7 @@ export default defineComponent({
           title: "Technology Innovation Project Program 1",
           position: "Full Stack Dev / Data Analyst (Intern)",
           institution: "I Assist Innovation Labs",
-          date: "March, 2020 - Aug,2020",
+          date: "March, 2020 - Aug, 2020",
           duration: "6 months",
         },
         {
@@ -70,8 +69,7 @@ export default defineComponent({
         },
         {
           title: "First Full Time Job",
-          position:
-            "Assistant Systems Engineer (Full Stack Developer / Oracle Cloud Specialist)",
+          position: "Assistant Systems Engineer",
           institution: "Tata Consultancy Services",
           date: "Dec, 2021 - Nov, 2023",
           duration: "1 year 11 months",
@@ -83,10 +81,24 @@ export default defineComponent({
           date: "Jan, 2024 - Apr, 2026",
         },
       ],
+      lineOffset: 0,
     };
+  },
+  mounted() {
+    this.calculateLineOffset();
+    window.addEventListener("resize", this.calculateLineOffset);
+  },
+  methods: {
+    calculateLineOffset() {
+      const timelineLine = this.$refs.timelineLine as HTMLElement;
+      if (timelineLine) {
+        this.lineOffset = timelineLine.getBoundingClientRect().left;
+      }
+    },
   },
 });
 </script>
+
 <style scoped lang="scss">
 @import "@/styles/TimelineComponent.scss";
 </style>
