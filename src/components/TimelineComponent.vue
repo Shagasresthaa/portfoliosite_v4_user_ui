@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, onMounted } from "vue";
+import { defineComponent } from "vue";
 import TimelineCard from "./TimelineCard.vue";
 
 export default defineComponent({
