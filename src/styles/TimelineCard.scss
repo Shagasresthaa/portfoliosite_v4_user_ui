@@ -55,6 +55,7 @@
     margin: 1rem auto;
 
     &::before {
+      visibility: hidden;
       left: 50%; /* Center the circle for top-down layout */
       transform: translate(-50%, -50%);
     }
