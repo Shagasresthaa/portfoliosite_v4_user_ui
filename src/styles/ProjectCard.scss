@@ -34,13 +34,24 @@
 
   &__description,
   &__extended {
+    text-align: justify;
     font-size: 1.1rem;
     color: #cdd6f4;
   }
 
   &__link {
-    color: #89b4fa;
-    text-decoration: underline;
+    background-color: rgba(10, 54, 98, 0.85);
+    margin-right: 2rem;
+    color: #cdd6f4;
+    border-radius: 10px;
+    padding: 8px 14px;
+    border: none;
+    transition: background-color 0.3s;
+    text-decoration: none;
+
+    &:hover {
+      background-color: rgba(20, 64, 108, 0.95);
+    }
   }
 
   &__toggle {
@@ -55,6 +66,16 @@
       background-color: rgba(20, 64, 108, 0.95);
     }
   }
+
+  &__image {
+    max-width: 8%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 .fade-enter-active,
 .fade-leave-active {
@@ -65,12 +86,90 @@
   opacity: 0;
 }
 
-.project-card__image {
-  max-width: 8%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 50%;
-  aspect-ratio: 1 / 1;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+/* Medium screens */
+@media (max-width: 1000px) {
+  .project-card {
+    &__title {
+      font-size: xx-large;
+    }
+
+    &__status {
+      font-size: x-large;
+    }
+
+    &__affiliation,
+    &__dates {
+      font-size: medium;
+    }
+
+    &__description,
+    &__extended {
+      font-size: medium;
+    }
+
+    &__link {
+      margin-top: 1rem !important;
+      margin-bottom: 1rem !important;
+    }
+
+    &__image {
+      max-width: 20%;
+    }
+
+    &__viewers {
+      margin: 1%;
+      display: flex;
+      flex-direction: row;
+    }
+    &__toggle {
+      margin-top: auto;
+      margin-bottom: auto;
+      max-height: fit-content;
+      padding: none;
+    }
+  }
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .project-card {
+    &__title {
+      font-size: larger;
+    }
+
+    &__status {
+      font-size: large;
+    }
+
+    &__affiliation,
+    &__dates {
+      font-size: small;
+    }
+
+    &__description,
+    &__extended {
+      font-size: small;
+    }
+
+    &__link {
+      margin-top: 1rem !important;
+      margin-bottom: 1rem !important;
+    }
+
+    &__image {
+      max-width: 35%;
+    }
+
+    &__viewers {
+      margin: 1%;
+      display: flex;
+      flex-direction: row;
+    }
+    &__toggle {
+      margin-top: auto;
+      margin-bottom: auto;
+      max-height: fit-content;
+      padding: none;
+    }
+  }
 }

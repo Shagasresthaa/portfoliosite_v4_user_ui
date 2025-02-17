@@ -40,7 +40,7 @@
           <i class="fab fa-github fa-2xl"></i>
         </a>
         <a
-          href="https://drive.google.com/file/d/1-rgNLOmNlwts84TTxz5ewItxeTlhfHj2/view?usp=sharing"
+          href="https://drive.google.com/file/d/13PJt4xrrdotOcVET3wA536C4uIQ-rJI0/view?usp=sharing"
           target="_blank"
         >
           <i class="far fa-file-pdf fa-2xl"></i>
