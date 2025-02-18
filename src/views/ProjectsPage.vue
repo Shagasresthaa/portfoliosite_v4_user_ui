@@ -1,6 +1,6 @@
 <template>
   <div class="projects">
-    <h1>This is Projects Page</h1>
+    <ProjectShowcaseComponent />
   </div>
   <FooterComponent />
 </template>
@@ -8,11 +8,13 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import FooterComponent from "@/components/FooterComponent.vue";
+import ProjectShowcaseComponent from "@/components/ProjectShowcaseComponent.vue";
 
 export default defineComponent({
   name: "ProjectsPage",
   components: {
     FooterComponent,
+    ProjectShowcaseComponent,
   },
 });
 </script>

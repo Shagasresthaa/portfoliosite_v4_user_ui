@@ -1,0 +1,31 @@
+.work-in-progress-wrapper {
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+}
+
+.top-bar,
+.bottom-bar {
+  height: 2vh;
+  width: 100%;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 0, 0.85),
+    rgba(255, 255, 0, 0.85) 2vh,
+    rgba(255, 0, 0, 0.85) 2vh,
+    rgba(255, 0, 0, 0.85) 4vh
+  );
+}
+
+.work-in-progress {
+  color: white;
+  padding: 1rem;
+  font-weight: bold;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.display-1 {
+  margin-bottom: 0;
+}

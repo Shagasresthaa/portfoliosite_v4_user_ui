@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   padding: 10px 20px;
+  padding: 0.65%;
   background-color: rgba(10, 25, 47, 0.65);
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -34,19 +35,6 @@
   }
 }
 
-.login-btn {
-  background: none;
-  border: none;
-  color: #ccd6f6;
-  font-size: xx-large;
-  cursor: pointer;
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: #89abe3;
-  }
-}
-
 .navbar-dark .navbar-nav .nav-link.router-link-active,
 .navbar-dark .navbar-nav .nav-item.active .nav-link .nav-link.active {
   color: #89abe3 !important;
@@ -56,8 +44,10 @@
   .navbar-nav {
     display: none;
   }
-  .login-btn {
-    flex-grow: 1;
+  .navbar-collapse.show .navbar-nav {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
     text-align: center;
   }
 }

@@ -5,6 +5,20 @@
   align-items: center;
   font-family: "Pacifico", cursive;
   color: white;
-  margin-top: auto;
+  margin-top: 10rem;
   margin-bottom: auto;
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .projects {
+    margin-top: 5rem;
+  }
+}
+
+/* Medium screens */
+@media (max-width: 1000px) {
+  .projects {
+    margin-top: 8rem;
+  }
 }

@@ -5,6 +5,7 @@
   align-items: center;
   width: 100%;
   color: white;
+  margin-top: 1%;
 }
 
 .content-area {
@@ -14,7 +15,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 3rem;
 }
 
 .introsec {
@@ -61,13 +61,15 @@
 .fa-linkedin,
 .fa-github,
 .fa-file-pdf,
-.fa-award {
+.fa-award,
+.fa-orcid,
+.fa-steam {
   color: white;
   margin: 1rem;
 }
 
 .fa-linkedin:hover {
-  color: rgb(14, 111, 221);
+  color: rgb(17, 171, 243);
 }
 
 .fa-github:hover {
@@ -82,10 +84,17 @@
   color: rgb(243, 140, 4);
 }
 
-/* Small screens and narrow tall screens */
-@media (max-width: 768px) and (max-height: 700px) {
+.fa-orcid:hover {
+  color: rgb(149, 219, 18);
+}
+
+.fa-steam:hover {
+  color: rgb(13, 96, 221);
+}
+/* Medium screens */
+@media (max-width: 1300px) {
   .home {
-    margin-top: 15vh;
+    margin-top: 15%;
   }
 
   .profile-pic {
@@ -94,85 +103,24 @@
   }
 }
 
-/* Standard small screens */
-@media (max-width: 768px) and (min-height: 701px) {
+/* Small screens */
+@media (max-width: 480px) {
   .home {
-    margin-top: 10vh;
-  }
-
-  .profile-pic {
-    width: 12rem;
-    height: 12rem;
-  }
-}
-
-/* Very small screens */
-@media (max-width: 480px) and (max-height: 600px) {
-  .home {
-    margin-top: 20vh;
+    margin-top: 20%;
   }
 
   .profile-pic {
     width: 10rem;
     height: 10rem;
   }
-}
-
-@media (max-width: 480px) and (min-height: 601px) {
-  .home {
-    margin-top: 15vh;
+  .cont {
+    font-size: medium;
+    line-height: 1rem;
   }
-
-  .profile-pic {
-    width: 10rem;
-    height: 10rem;
+  .hintro {
+    font-size: large;
   }
-}
-
-/* iPhone XR, iPhone 12 Pro, and similar devices */
-@media (max-width: 896px) and (min-height: 801px) {
-  .home {
-    margin-top: 8vh;
-  }
-
-  .profile-pic {
-    width: 13rem;
-    height: 13rem;
-  }
-}
-
-/* Medium to large screens */
-@media (min-width: 769px) and (max-height: 900px) {
-  .home {
-    margin-top: 10vh;
-  }
-
-  .profile-pic {
-    width: 13rem;
-    height: 13rem;
-  }
-}
-
-/* Tall screens */
-@media (min-width: 769px) and (min-height: 901px) {
-  .home {
-    margin-top: 5vh;
-  }
-
-  .profile-pic {
-    width: 13rem;
-    height: 13rem;
-  }
-}
-
-/* Extremely tall screens */
-@media (min-width: 1024px) and (min-height: 1200px) {
-  .home {
-    margin-top: 3vh;
-  }
-
-  .profile-pic {
-    width: 14rem;
-    height: 14rem;
+  .bintro {
+    font-size: xx-large;
   }
 }

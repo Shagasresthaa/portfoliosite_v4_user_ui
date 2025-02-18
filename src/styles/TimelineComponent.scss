@@ -1,0 +1,23 @@
+.timeline {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .timeline-line {
+    position: absolute;
+    width: 0.3rem;
+    background-color: #252525;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 768px) {
+  .timeline-line {
+    visibility: hidden;
+  }
+}

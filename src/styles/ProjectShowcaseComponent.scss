@@ -1,0 +1,38 @@
+.projects-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px;
+  width: 80%;
+
+  &__card {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.projects-showcase__card.status-completed,
+.project-card__status.status-completed {
+  color: #4caf50;
+  border-left: 5px solid #4caf50;
+}
+.projects-showcase__card.status-in-progress,
+.project-card__status.status-in-progress {
+  color: #ff9800;
+  border-left: 5px solid #ff9800;
+}
+.projects-showcase__card.status-planning,
+.project-card__status.status-planning {
+  color: #2196f3;
+  border-left: 5px solid #2196f3;
+}
+
+@media (max-width: 768px) {
+  .projects-showcase {
+    padding: 10px;
+    gap: 16px;
+  }
+  .projects-showcase__card {
+    padding: 12px;
+  }
+}
