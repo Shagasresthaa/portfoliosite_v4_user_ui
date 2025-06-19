@@ -8,6 +8,10 @@ import ContactPage from "@/views/ContactPage.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
+    redirect: "/home",
+  },
+  {
+    path: "/home",
     name: "Home",
     component: HomePage,
     meta: { title: "Home" },
@@ -39,7 +43,7 @@ const routes: Array<RouteRecordRaw> = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
 });
 

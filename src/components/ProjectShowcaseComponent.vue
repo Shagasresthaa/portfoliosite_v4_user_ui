@@ -51,6 +51,25 @@ export default defineComponent({
       },
       {
         title:
+          "Planetary Surface Features Classifier using DenseNet based Model",
+        status: "Completed",
+        description:
+          "A planetary surface feature classifier using AstroNet, a custom DenseNet-inspired CNN with densely connected convolutional blocks, batch normalization, and ReLU activations.",
+        startDate: "2024-08-17",
+        endDate: "2024-12-13",
+        affiliation:
+          "Western Michigan University (Class Project for CS 5821 Artifical Intelligence) / Solo",
+        imageUrl: require("@/assets/mars.jpeg"),
+        // Image source fron NASA: https://science.nasa.gov/mission/mars-reconnaissance-orbiter/
+        attribution:
+          "Image Source: https://science.nasa.gov/mission/mars-reconnaissance-orbiter/",
+        extendedDescription:
+          "A planetary surface feature classifier using AstroNet, a custom DenseNet-inspired CNN with densely connected convolutional blocks, batch normalization, and ReLU activations. Trained on orbital imagery to detect four classes: bright dune, crater, dark dune, and impact ejecta. Deployed via a minimal Flask app for real-time inference on uploaded or cropped image regions.",
+        projectUrl:
+          "https://github.com/Shagasresthaa/PlanetarySurfaceFeaturesClassifier",
+      },
+      {
+        title:
           "Exoplanet Candidate Detection using Multimodel Neural Networks and TESS Transit Data",
         status: "Completed",
         description:

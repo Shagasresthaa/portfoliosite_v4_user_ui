@@ -11,6 +11,6 @@ RUN npm run build
 FROM node:22.1 as production-stage
 RUN npm install -g serve
 WORKDIR /app
-COPY --from=build-stage /app/dist /app
+COPY --from=build-stage /app/dist /app/home
 EXPOSE 3000
-CMD ["serve", "-s", ".", "-l", "3000"]
+CMD ["serve", "-s", "home", "-l", "3000"]
