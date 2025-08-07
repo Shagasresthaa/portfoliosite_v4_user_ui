@@ -8,10 +8,6 @@ import ContactPage from "@/views/ContactPage.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    redirect: "/home",
-  },
-  {
-    path: "/home",
     name: "Home",
     component: HomePage,
     meta: { title: "Home" },
