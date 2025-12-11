@@ -26,7 +26,7 @@ export default defineComponent({
     return {
       events: [
         {
-          title: "Senior Secondary Education",
+          title: "High School",
           position: "Student",
           institution: "Sai Chaitanya Junior College",
           date: "2015 - 2017",

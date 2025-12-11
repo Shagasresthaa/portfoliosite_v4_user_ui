@@ -15,8 +15,11 @@
           Developer
         </p>
         <p>
-          Member of The Planetary Society || Member of the Society of Amateur
-          Radio Astronomers
+          Member of The Planetary Society || Member of IEEE Computer Society
+        </p>
+        <p>
+          Head Lead of Systems Department and Lead Developer of Web Department @
+          WMU Developer Club
         </p>
       </div>
       <div class="lnks">
@@ -30,14 +33,14 @@
         >
           <i class="fab fa-orcid fa-2xl"></i>
         </a>
-        <a
-          href="https://www.linkedin.com/in/sresthaa-shaga-a5329b154"
-          target="_blank"
-        >
+        <a href="https://www.linkedin.com/in/sresthaa-shaga" target="_blank">
           <i class="fab fa-linkedin fa-2xl"></i>
         </a>
         <a href="https://github.com/Shagasresthaa" target="_blank">
           <i class="fab fa-github fa-2xl"></i>
+        </a>
+        <a href="https://www.instagram.com/sresthaa17/" target="_blank">
+          <i class="fa fa-instagram fa-2xl"></i>
         </a>
         <a
           href="https://drive.google.com/file/d/13PJt4xrrdotOcVET3wA536C4uIQ-rJI0/view?usp=sharing"
